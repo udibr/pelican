@@ -14,7 +14,7 @@ you will have to edit `pelicanconf.py` file. Visit the file in this repository a
 When you want to test locally do 
 ```bash
 rm cache/* # this is needed if you change an existing notebook or code
-rm cache/*
+# generate content in output directory
 pelican
 # open browser before server because I dont want to run it in background
 (sleep 5 ; open http://localhost:8000) &
