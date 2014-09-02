@@ -13,26 +13,25 @@ you will have to edit `pelicanconf.py` file. Visit the file in this repository a
 
 When you want to test locally do 
 ```bash
-pelican content
+rm cache/* # this is needed if you change an existing notebook or code
+rm cache/*
+pelican
 # open browser before server because I dont want to run it in background
 (sleep 5 ; open http://localhost:8000) &
 (cd output ; python -m SimpleHTTPServer)
 ```
 
 When you want to publish you will need two different repositories on github:
-`pelican` and `udibr.github.io` (which is alaised as `origin` below).
-The `pelican` repository will have two branches: `master` which will contain the code (as described above) and `gh-pages` which will contain a copy of the content inside `output` directory.
-The content of the `gh-pages` branch will be pushed into the `master` branch of the second repository which must be named: `udibr.github.io`
+one containing your code as described above and repository that mush have a name that looks like this: udibr.github.io`
+
+The code repository will have two branches: `master` which will contain the code and `gh-pages` which will contain a copy of the content inside `output` directory.
+The content of the `gh-pages` branch will be pushed into the `master` branch of the second 
 
 ```bash
-# update the output direcotry
-pelican
 # copy content of output directory to root of gh-pages branch
 ghp-import output
 # copy the gh-pages branch to the master branch on udibr.github.io
-git push -f origin gh-pages:master
-# save a backup of your code from master branch of pelican
-git push -u pelican master
+git push git@github.com:udibr/udibr.github.io.git gh-pages:master
 # check  your updated site
 open http://udibr.github.io
 ```
