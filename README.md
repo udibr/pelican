@@ -19,20 +19,19 @@ pelican content
 (cd output ; python -m SimpleHTTPServer)
 ```
 
-
 When you want to publish you will need two different repositories on github:
-`pelican` and `udibr.github.io`.
-The `pelican` repository will have two branches: `master` which will contain the code (as described above) and `gh-pages` which will contain a copy of the `output` directory content.
+`pelican` and `udibr.github.io` (which is alaised as `origin` below).
+The `pelican` repository will have two branches: `master` which will contain the code (as described above) and `gh-pages` which will contain a copy of the content inside `output` directory.
 The content of the `gh-pages` branch will be pushed into the `master` branch of the second repository which must be named: `udibr.github.io`
 
 ```bash
 # update the output direcotry
-pelican content
-# copy output directory to root of gh-pages branch
+pelican
+# copy content of output directory to root of gh-pages branch
 ghp-import output
 # copy the gh-pages branch to the master branch on udibr.github.io
 git push -f origin gh-pages:master
-# save a backup of your code from master branch
+# save a backup of your code from master branch of pelican
 git push -u pelican master
 # check  your updated site
 open http://udibr.github.io
