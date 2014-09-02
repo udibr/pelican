@@ -23,7 +23,7 @@ THEME = '/Users/udi/Downloads/github/pelican-octopress-theme'
 ```
 create the file `_nb_header.html`
 ```bash
-touch _bv_header.html
+touch _nb_header.html
 ```
 
 
@@ -34,11 +34,20 @@ pelican content
 (cd output ; python -m SimpleHTTPServer & open http://localhost:8000)
 ```
 
-When you want to publish
+When you want to publish you will need two different repositories on github.
+The first `pelican` will contain all your code as described above.
+Your `pelican` repository will have two branches: `master` which will contain the code and `gh-pages` which will contain the `output` directory content.
+The content of the `gh-pages` branch will be pushed into the `master` branch of a second repository which must be named: `udibr.github.io`
+
 ```bash
+# update the output direcotry
 pelican content
+# copy output directory to root of gh-pages branch
 ghp-import output
+# copy the gh-pages branch to the master branch on udibr.github.io
 git push -f origin gh-pages:master
+# save a backup of your code from master branch
 git push -u pelican master
+# check  your updated site
 open http://udibr.github.io
 ```
