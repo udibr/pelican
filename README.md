@@ -29,10 +29,10 @@ pelican
 ```
 
 When you want to publish you will need two different repositories on github:
-one containing your code as described above and repository that mush have a name that looks like this: udibr.github.io`
+one containing your code (as this repository) and a second repository that mush have a name that looks like this: `udibr.github.io`
 
 The code repository will have two branches: `master` which will contain the code and `gh-pages` which will contain a copy of the content inside `output` directory.
-The content of the `gh-pages` branch will be pushed into the `master` branch of the second 
+The content of the `gh-pages` branch will be pushed into the `master` branch of the second repository.
 
 ```bash
 # copy content of output directory to root of gh-pages branch
