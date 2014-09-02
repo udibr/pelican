@@ -9,24 +9,7 @@ git clone https://github.com/getpelican/pelican-plugins
 instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)
 Notebooks are placed at `content/notebooks` and code samples at `content/code`
 
-
-you will have to add following lines to your `pelican` file
-```bash
-PLUGIN_PATHS = ['/Users/udi/Downloads/github/pelican-plugins']
-PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
-           'liquid_tags.youtube', 'liquid_tags.vimeo',
-           'liquid_tags.include_code', 'liquid_tags.notebook']
-
-EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
-
-THEME = '/Users/udi/Downloads/github/pelican-octopress-theme'
-```
-create the file `_nb_header.html`
-```bash
-touch _nb_header.html
-```
-
-
+you will have to edit `pelicanconf.py` file. Visit the file in this repository and spot the changes needed.
 
 When you want to test locally do 
 ```bash
