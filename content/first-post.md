@@ -1,5 +1,11 @@
-Title: My First Review
-Date: 2010-12-03 10:20
-Category: Review
+Title: Testing
+Date: 2014-09-02 15:51
+Category: Code
 
-Following is a review of my favorite mechanical keyboard.
+{% youtube VVAKFJ8VVp4 %}
+
+{% include_code test.py %}
+
+{% notebook testipynb.ipynb %}
+
+
