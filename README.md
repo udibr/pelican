@@ -31,8 +31,11 @@ touch _nb_header.html
 When you want to test locally do 
 ```bash
 pelican content
-(cd output ; python -m SimpleHTTPServer & open http://localhost:8000)
+# open browser before server because I dont want to run it in background
+(sleep 5 ; open http://localhost:8000) &
+(cd output ; python -m SimpleHTTPServer)
 ```
+
 
 When you want to publish you will need two different repositories on github:
 `pelican` and `udibr.github.io`.
