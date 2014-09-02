@@ -1,4 +1,6 @@
-Following http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/
+This is the source of my [udibr](https://udibr.github.io/) blog.
+Following the the ideas set [here](http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/).
+Continue reading if you want to create your own blog on github.
 
 Install [pelican](http://docs.getpelican.com/en/3.4.0/quickstart.html#installation)
 and [ghp-import](https://github.com/davisp/ghp-import):
@@ -13,7 +15,7 @@ git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
 git submodule add https://github.com/getpelican/pelican-plugins
 git submodule update --init --recursive
 ```
-instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](./content/first-post.md) to have an idea, 
+instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](./content/first-post.md) to have an idea how I got to [this page](https://udibr.github.io/blogin-on-github.html), 
 notebooks are placed at `content/notebooks` and code samples at `content/code`
 
 you will have to edit [pelicanconf.py](./pelicanconf.py) and [publishconf.py](./publishconf.py) files. Visit the files in this repository and spot the changes needed (hint: at least change udibr to your github login name.)
