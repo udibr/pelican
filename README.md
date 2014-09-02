@@ -1,15 +1,16 @@
 Following http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/
 
-you will have to clone few things
+if you are creating a new repository you will have to add some submodules
 ```bash
 cd ~/Downloads/github
-git clone https://github.com/jakevdp/pelican-octopress-theme.git
-git clone https://github.com/getpelican/pelican-plugins
+git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
+git submodule add https://github.com/getpelican/pelican-plugins
+git submodule update --init --recursive
 ```
 instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)
 Notebooks are placed at `content/notebooks` and code samples at `content/code`
 
-you will have to edit `pelicanconf.py` file. Visit the file in this repository and spot the changes needed.
+you will have to edit [pelicanconf.py](./pelicanconf.py) file. Visit the file in this repository and spot the changes needed.
 
 When you want to test locally do 
 ```bash
