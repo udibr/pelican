@@ -1,8 +1,10 @@
 Following http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/
 
-if you are creating a new repository you will have to add some submodules
+Install [pelican](http://docs.getpelican.com/en/3.4.0/quickstart.html#installation)
+and [ghp-import](https://github.com/davisp/ghp-import)
+
+if you are creating a new repository (and not forking this one) you will have to add some submodules:
 ```bash
-cd ~/Downloads/github
 git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
 git submodule add https://github.com/getpelican/pelican-plugins
 git submodule update --init --recursive
@@ -10,7 +12,7 @@ git submodule update --init --recursive
 instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just [this markdown](./content/first-post.md) to have an idea, 
 notebooks are placed at `content/notebooks` and code samples at `content/code`
 
-you will have to edit [pelicanconf.py](./pelicanconf.py) file. Visit the file in this repository and spot the changes needed.
+you will have to edit [pelicanconf.py](./pelicanconf.py) file. Visit the file in this repository and spot the changes needed (hint: at least change udibr to your github login name.)
 
 When you want to test locally do 
 ```bash

@@ -32,7 +32,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-#MARKUP = ('md', 'ipynb')
 THEME = 'pelican-octopress-theme'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
@@ -51,9 +50,9 @@ else:
 
 # Sharing
 TWITTER_USER = 'udibr'
-GOOGLE_PLUS_USER = 'udi.benreuven'
-GOOGLE_PLUS_ONE = True
-GOOGLE_PLUS_HIDDEN = False
+GOOGLE_PLUS_USER = ''
+GOOGLE_PLUS_ONE = False
+GOOGLE_PLUS_HIDDEN = True
 FACEBOOK_LIKE = False
 TWITTER_TWEET_BUTTON = True
 TWITTER_LATEST_TWEETS = True
