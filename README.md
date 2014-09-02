@@ -21,17 +21,21 @@ EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 THEME = '/Users/udi/Downloads/github/pelican-octopress-theme'
 ```
+create the file `_nb_header.html`
+```bash
+touch _bv_header.html
+```
+
+
 
 When you want to test locally do 
 ```bash
-make html
 pelican content
 (cd output ; python -m SimpleHTTPServer & open http://localhost:8000)
 ```
 
 When you want to publish
 ```bash
-make html
 pelican content
 ghp-import output
 git push -f origin gh-pages:master
