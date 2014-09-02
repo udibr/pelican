@@ -22,7 +22,7 @@ When you want to test locally do
 ```bash
 rm cache/* # this is needed if you change an existing notebook or code
 # generate content in output directory
-pelican
+pelican content
 # open browser before server because I dont want to run it in background
 (sleep 5 ; open http://localhost:8000) &
 (cd output ; python -m SimpleHTTPServer)
@@ -35,6 +35,7 @@ The code repository will have two branches: `master` which will contain the code
 The content of the `gh-pages` branch will be pushed into the `master` branch of the second repository.
 
 ```bash
+pelican content -s publishconf.py
 # copy content of output directory to root of gh-pages branch
 ghp-import output
 # copy the gh-pages branch to the master branch on udibr.github.io
