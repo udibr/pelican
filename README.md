@@ -7,8 +7,8 @@ git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
 git submodule add https://github.com/getpelican/pelican-plugins
 git submodule update --init --recursive
 ```
-instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)
-Notebooks are placed at `content/notebooks` and code samples at `content/code`
+instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just [this markdown](./content/first-post.md) to have an idea, 
+notebooks are placed at `content/notebooks` and code samples at `content/code`
 
 you will have to edit [pelicanconf.py](./pelicanconf.py) file. Visit the file in this repository and spot the changes needed.
 
