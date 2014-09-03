@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://udibr.github.io'
+SITEURL = 'http://udibr.github.io'
 
 DELETE_OUTPUT_DIRECTORY = True
 
