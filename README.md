@@ -20,6 +20,9 @@ notebooks are placed at `content/notebooks` and code samples at `content/code`
 
 you will have to edit [pelicanconf.py](./pelicanconf.py) and [publishconf.py](./publishconf.py) files. Visit the files in this repository and spot the changes needed (hint: at least change udibr to your github login name.)
 
+If you want people to comment on your blog you will have to open an account at [disqus.com](http://disqus.com) see [this site](http://querbalken.net/howto-setup-comments-with-disqus-in-pelican-en.html) for details relevant for pelican.
+If you dont want comments then comment out the DISQUS line in `publishconf.py`
+
 When you want to test locally do 
 ```bash
 rm cache/* # this is needed if you change an existing notebook or code
