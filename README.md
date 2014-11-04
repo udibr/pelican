@@ -15,7 +15,7 @@ git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
 git submodule add https://github.com/getpelican/pelican-plugins
 git submodule update --init --recursive
 ```
-instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](./content/first-post.md) to have an idea how I got to [this page](https://udibr.github.io/blogin-on-github.html), 
+instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](https://raw.githubusercontent.com/udibr/pelican/master/content/first-post.md) to have an idea how I got to [this page](https://udibr.github.io/blogin-on-github.html), 
 notebooks are placed at `content/notebooks` and code samples at `content/code`
 
 you will have to edit [pelicanconf.py](./pelicanconf.py) and [publishconf.py](./publishconf.py) files. Visit the files in this repository and spot the changes needed (hint: at least change udibr to your github login name.)
