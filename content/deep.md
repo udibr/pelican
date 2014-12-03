@@ -2,12 +2,12 @@ Title: Getting deeper into deep learning
 Date: 2014-12-03 10:34
 Category: Code
 
-What do you prefer? Coffe, Tea? or should I ask CAFFE or ThEAno?
+What do you prefer? Coffee, Tea? or should I ask CAFFE or ThEAno?
 
-These days there are two main tracks to doing deep learning. Either use [Pylearn2](http://deeplearning.net/software/pylearn2/)/Theano or use [Caffe](http://caffe.berkeleyvision.org/). Pyearn2 is [very confusing cto use](http://fastml.com/how-to-get-predictions-from-pylearn2/) but I've found a very nice video lecture showing how to bypass Pylearn2 and do learning directly with Theano. My notebooks made from the code of the lecture can be found [here](http://nbviewer.ipython.org/github/udibr/Theano-Tutorials/blob/master/notebooks/index.ipynb).
+These days there are two main tracks to doing deep learning. Either use [Pylearn2](http://deeplearning.net/software/pylearn2/)/Theano or use [Caffe](http://caffe.berkeleyvision.org/). Pyearn2 is [very confusing to use](http://fastml.com/how-to-get-predictions-from-pylearn2/) but I've found a very nice video lecture showing how to bypass Pylearn2 and do learning directly with Theano. My notebooks made from the code of the lecture can be found [here](http://nbviewer.ipython.org/github/udibr/Theano-Tutorials/blob/master/notebooks/index.ipynb).
 
 Theano is easy to install (on OS X or Ubuntu) and
-in Theano you have full control of the algorithm beeing used, this make it ideal for researching new ways of doing things. For example, if your data has special structure to it or if you want to use a special loss function.
+in Theano you have full control of the algorithm being used, this make it ideal for researching new ways of doing things. For example, if your data has special structure to it or if you want to use a special loss function.
 
 I've found out that running the last network of the tutorial crashes my Mac when running on a GPU. I think it is a result of GPU overheating so it could be a local problem.
 
