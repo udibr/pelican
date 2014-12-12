@@ -1,6 +1,6 @@
 Title: Getting deeper into deep learning
 Date: 2014-12-03 10:34
-Category: Code
+Category: ML
 
 What do you prefer? Coffee, Tea? or should I ask CAFFE or ThEAno?
 
