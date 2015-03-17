@@ -13,10 +13,15 @@ if you are creating a new repository (and not forking this one) you will have to
 ```bash
 git submodule add https://github.com/jakevdp/pelican-octopress-theme.git
 git submodule add https://github.com/getpelican/pelican-plugins
+git submodule add git://github.com/danielfrg/pelican-ipynb.git plugins/ipynb
+```
+and in any case you will have to do
+```bash
 git submodule update --init --recursive
 ```
-instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](https://raw.githubusercontent.com/udibr/pelican/master/content/first-post.md) to have an idea how I got to [this page](https://udibr.github.io/blogin-on-github.html), 
-notebooks are placed at `content/notebooks` and code samples at `content/code`
+instructions on liquid_tags can be found [here](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) but just go through [this markdown](https://raw.githubusercontent.com/udibr/pelican/master/content/first-post.md) to have an idea how I got to [this page](https://udibr.github.io/blogin-on-github.html).
+Read [this link](https://github.com/danielfrg/pelican-ipynb) on how to convert ipython notebook to blog page.
+Code samples are placed at `content/code`
 
 you will have to edit [pelicanconf.py](./pelicanconf.py) and [publishconf.py](./publishconf.py) files. Visit the files in this repository and spot the changes needed (hint: at least change udibr to your github login name.)
 
