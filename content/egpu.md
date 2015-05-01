@@ -1,17 +1,17 @@
-Title: using external GTX 980 with MacBook pro
+Title: using external GTX 980 with MacBook Pro
 Date: 2015-05-01 18:13
 Category: ML
 
-I have a working setup made from MacBook Pro (Retina, Mid 2012) connected to an external GPU card – GTX 980. The card is placed in PCIe box that is connected to the laptop with a thunderbolt 2 cable which gives a throughput of 10Gb/s (latter MBP supports 16Gb/s but the PCIe box is in any case limited to the lower rate.) The GPU card is too big for the box so I had to give up on the box cover and cut out and fold the front of the box. The GPU also requires an external 500W power supply.
+I have a working setup made from MacBook Pro (Retina, Mid 2012) connected to an external GPU card – GTX 980. The card is placed in PCIe box that is connected to the laptop with a thunderbolt 2 cable which gives a throughput of 10Gb/s (latter MBP supports 16Gb/s but the PCIe box is in any case limited to the lower rate.) The GPU also requires an external 500W power supply.
 
 ![external GPU connected to MacBook Pro](https://pbs.twimg.com/media/CDjmbmYWAAEE_SV.jpg)
 
 Hardware:
 
-* [Akitio Thunder2 PCIe Box]( http://www.amazon.com/gp/product/B00LTAUTHE) it comes with a thunderbolt cable.
+* [Akitio Thunder2 PCIe Box]( http://www.amazon.com/gp/product/B00LTAUTHE) it comes with a thunderbolt cable. The GPU card is too big for the box so I had to give up on the box cover and cut out and fold the front of the box. Make sure you disassemble all the electroinc parts out of the box before hammering it to its new shape.
 * [EVGA GTX 980 SC ACX 2.0 4GB GDDR5 Graphics Card](http://www.amazon.com/gp/product/B00NT9UT3M) you can find reduced price for this card on Amazon or eBay.
 * I used an old power supply I have, DYNEX DX-520WPS.
-The GPU card came with electric connectors for the power supply in case you don’t have the right ones.
+The GPU card came with electric connectors for the power supply in case you don’t have the right ones. To keep the power supply turned on at all time you have to jumper the green line to the black line.
 
 I then followed [this site](http://www.journaldulapin.com/2014/12/04/a-nvidia-maxwell-card-with-thunderbolt-on-a-mac-running-yosemite/) with some  differences:
 
