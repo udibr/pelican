@@ -47,7 +47,7 @@ Reboot the machine and now edit the following files
     /System/Library/Extensions/NVDAStartup.kext
     /System/Library/Extensions/IONDRVSupport.kext
     /System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAController.kext
-In these files look for the sections that begin with <key>CFBundleIdentifier</key> and add, just before the </dict>
+In these files look for the sections that begin with `<key>CFBundleIdentifier</key>` and add, just before the `</dict>`
 
     <key>IOPCITunnelCompatible</key>
     <true/>
@@ -78,12 +78,18 @@ Now its time to connect the PCIe box to the laptop. The following ritual works f
 * connect thunderbolt,
 * power GPU and PCI box
 * wait few seconds
-* power off
-* and after about two seconds
-* power on again
+* Extra vodoo step: power off and after about two seconds power on again
 * turn turn on laptop
 
-to disconnect:
+You can validate that your laptop is aware of the new GPU in one of the following ways:
+
+* In the CPU menu of iStat Menu
+* In About This Mac->System Report...->Hardware->Graphics/Displays
+* running CUDA's deviceQuery (which you need to build yourself first)
+
+I've noticed that if you do a reboot you have to wait few seconds until the GPU is recognized.
+
+To disconnect:
 
 * shutdown laptop
 * power off GPU and PCI expansion board
