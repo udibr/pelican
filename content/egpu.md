@@ -10,7 +10,7 @@ Hardware:
 
 * [Akitio Thunder2 PCIe Box]( http://www.amazon.com/gp/product/B00LTAUTHE) it comes with a thunderbolt cable. The GPU card is too big for the box so I had to give up on the box cover and cut out and fold the front of the box. Make sure you disassemble all the electroinc parts out of the box before hammering it to its new shape.
 * [EVGA GTX 980 SC ACX 2.0 4GB GDDR5 Graphics Card](http://www.amazon.com/gp/product/B00NT9UT3M) you can find reduced price for this card on Amazon or eBay.
-* I used an old power supply I have, DYNEX DX-520WPS.
+* I used <s>an old power supply I have, DYNEX DX-520WPS</s> Corsair RM750 power supply.
 The GPU card came with electric connectors for the power supply in case you don’t have the right ones. To keep the power supply turned on at all time you have to jumper the green line to the black line.
 
 I then followed [this site](http://www.journaldulapin.com/2014/12/04/a-nvidia-maxwell-card-with-thunderbolt-on-a-mac-running-yosemite/) with some  differences:
