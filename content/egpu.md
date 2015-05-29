@@ -35,7 +35,7 @@ We have an unsigned driver so we need to disable signature checking.
 but be careful: you may already have set other boot-args. To check, use the command
 
     nvram boot-args
-If that prints any values (e.g. "iog=0x0"), add them to the above command using a comma, like this: `sudo nvram boot-args=kext-dev-mode=1,iog=0x0` and latter to disable the `kext-dev-mode`, do not use the `-d` command but rather omit that part when setting the old boot-args
+If that prints any values (e.g. "iog=0x0"), add them to the above command using a comma, like this: `sudo nvram boot-args="kext-dev-mode=1 iog=0x0"` and latter to disable the `kext-dev-mode`, do not use the `-d` command but rather omit that part when setting the old boot-args
 
 In my case I ended up with:
 
@@ -44,9 +44,9 @@ In my case I ended up with:
 
 Reboot the machine and now edit the following files
 
-    /System/Library/Extensions/NVDAStartup.kext
-    /System/Library/Extensions/IONDRVSupport.kext
-    /System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAController.kext
+    /System/Library/Extensions/NVDAStartup.kext/Contents/Info.plist
+    /System/Library/Extensions/IONDRVSupport.kext/Info.plist
+    /System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAController.kext/Contents/Info.plist
 In these files look for the sections that begin with `<key>CFBundleIdentifier</key>` and add, just before the `</dict>`
 
     <key>IOPCITunnelCompatible</key>
@@ -88,6 +88,8 @@ You can validate that your laptop is aware of the new GPU in one of the followin
 * running CUDA's deviceQuery (which you need to build yourself first)
 
 I've noticed that if you do a reboot you have to wait few seconds until the GPU is recognized.
+
+I was surprised to find out that after making sure everything is working, I was able to reset the `nvram` (see above) and the GPU continued to work. This looks to me like an important step in term of security.
 
 To disconnect:
 
