@@ -89,8 +89,6 @@ You can validate that your laptop is aware of the new GPU in one of the followin
 
 I've noticed that if you do a reboot you have to wait few seconds until the GPU is recognized.
 
-I was surprised to find out that after making sure everything is working, I was able to reset the `nvram` (see above) and the GPU continued to work. This looks to me like an important step in term of security.
-
 To disconnect:
 
 * shutdown laptop
