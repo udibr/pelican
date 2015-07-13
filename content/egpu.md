@@ -19,7 +19,7 @@ I then followed [this site](http://www.journaldulapin.com/2014/12/04/a-nvidia-ma
 
 Look for the latest Nvidia WebDriver version. I found you can get it at https://gfe.nvidia.com/mac-update for example
 
-    wget http://us.download.nvidia.com/Mac/Quadro_Certified/346.01.02f02/WebDriver-346.01.02f02.pkg
+    wget http://us.download.nvidia.com/Mac/Quadro_Certified/346.01.03f01/WebDriver-346.01.03f01.pkg
     pkgutil --expand WebDriver-346.01.02f02.pkg WebDriver
     cd WebDriver
 
@@ -94,4 +94,14 @@ To disconnect:
 * shutdown laptop
 * power off GPU and PCI expansion board
 * disconnect thunderbolt
+
+When not in use:
+
+* switch from NVIDIA Web Driver to OS X Default Graphics Driver using NVIDIA Driver Manager (you can use the icon that appears at the top right of your menu.)
+* reboot
+* cleanup nvram:
+
+    nvram -d boot-args
+
+* Shut Down...
 
