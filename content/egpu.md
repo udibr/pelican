@@ -109,7 +109,7 @@ When you want to return to use the eGPU do:
 
     nvram boot-args="kext-dev-mode=1 nvda_drv=1"
 
-* Shot down
+* Shut down the mac
 * connect the eGPU and power it up
 * power the mac back
 
