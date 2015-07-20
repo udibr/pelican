@@ -97,11 +97,11 @@ To disconnect:
 
 When not in use:
 
-* switch from NVIDIA Web Driver to OS X Default Graphics Driver using NVIDIA Driver Manager (you can use the icon that appears at the top right of your menu.)
-* reboot
 * cleanup nvram:
 
     nvram -d boot-args
 
-* Shut Down...
+* Shut down the Mac
+* Disconnect the external GPU
+* Power Mac back on
 
