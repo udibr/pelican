@@ -7,7 +7,7 @@ I have a working setup made from MacBook Pro (Retina, Mid 2012) connected to an 
 
 ![external GPU connected to MacBook Pro](https://pbs.twimg.com/media/CDjmbmYWAAEE_SV.jpg)
 
-Hardware:
+#Hardware
 
 * [Akitio Thunder2 PCIe Box]( http://www.amazon.com/gp/product/B00LTAUTHE) it comes with a thunderbolt cable. The GPU card is too big for the box so I had to give up on the box cover and cut out and fold the front of the box. Make sure you disassemble all the electroinc parts out of the box before hammering it to its new shape.
 * [EVGA GTX 980 SC ACX 2.0 4GB GDDR5 Graphics Card](http://www.amazon.com/gp/product/B00NT9UT3M) you can find reduced price for this card on Amazon or eBay.
