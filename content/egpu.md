@@ -125,3 +125,4 @@ When you want to return to use the eGPU do:
 * connect the eGPU and power it up
 * power the mac back
 
+http://forum.netkas.org/index.php?board=8.0

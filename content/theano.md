@@ -74,3 +74,8 @@ You can even force some of the prints to appear even without an exception
     theano.printing.debugprint(my_theano_variable, print_type=True)
 
 I found that in many cases the GPU seats idle because the CPU is too slow feeding it with data. You can thread your CPU code etc but an easier solution will be to use the old code as is and run several experiments in parallel. For example, try different hyper parameter. Just open another shell and run a different experiment on the same GPU, Theano is fine with that.
+
+If you put “profile=True” into THEANO_FLAGS, it will analyse your program, showing a breakdown of how much is spent on each operation. Very handy for finding bottlenecks.
+
+Theano tutorials
+[Summer School 2015](https://github.com/mila-udem/summerschool2015)
