@@ -19,8 +19,8 @@ scores is not a simple Gaussian for the positive and/or negative examples.
 
 The method is very simple:
 
-* sort your scores (this expensive step can be parallelized)
-* collect every 5 sorted scores to a cell
+* sort your score examples (this expensive step can be parallelized)
+* collect examples into a cell, moving from lowest to highest score. Once reaching 5 positive examples, finish the cell and start creating a new cell and so on...
 * measure the true success rate of each cell
 * move between the cells form low to high score and merge the next cell with the current cell whenever the true success rate falls
 * re-compute the success rate of the merged cell, this can result in another merger with the cell just before the current cell and so on...
